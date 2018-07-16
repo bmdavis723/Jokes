@@ -1,0 +1,8 @@
+<% @mybg = "#C1D0C3"%>
+<h1>Welcome To Corny Joke Corner!</h1>
+<div>
+  <h3 class ="setup"> <%= @jokes["setup"]%> </h3>
+  <h4 class ="punchline"> <%= @jokes["punchline"]%> </h4>
+</div>
+
+<%= link_to "Click for another joke", jokes_path, :class => "jokebutton", :style => "float:left;margin-top:20px;" %>
